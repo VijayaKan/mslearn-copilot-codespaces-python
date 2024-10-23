@@ -17,7 +17,9 @@ app.mount("/ui", StaticFiles(directory=static_path), name="ui")
 class Body(BaseModel):
     length: Union[int, None] = 20
 
-
+Class Text(BaseModel):
+Content :str
+                         
 @app.get('/')
 def root():
     html_path = join(static_path, "index.html")
